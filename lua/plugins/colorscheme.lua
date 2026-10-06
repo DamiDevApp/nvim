@@ -1,3 +1,6 @@
--- Catpuccin colorscheme
-vim.pack.add { { src = "https://github.com/rebelot/kanagawa.nvim", name = "kanagawa" } }
-vim.cmd.colorscheme("kanagawa-dragon")
+vim.pack.add({
+	{ src = "https://github.com/bluz71/vim-moonfly-colors", name = "moonfly" },
+})
+
+vim.g.moonflyTransparent = true
+vim.cmd.colorscheme("moonfly")

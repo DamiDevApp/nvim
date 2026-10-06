@@ -14,4 +14,3 @@ require("mini.notify").setup({
 })
 require("mini.icons").setup({})
 require("mini.starter").setup({})
-require("mini.statusline").setup({})

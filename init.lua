@@ -12,7 +12,8 @@ require("plugins.treesitter")
 require("plugins.fzf")
 require("plugins.lsp-config")
 require("plugins.tmux-statusline")
-
+require("plugins.highlight-colors")
+require("plugins.lualine")
 -- ===================================
 -- Options
 -- ===================================
@@ -29,6 +30,7 @@ vim.opt.softtabstop = 2 -- stop not tabs with tab/backspace
 vim.opt.expandtab = true -- uses spaces instead of tabs
 vim.opt.smartindent = true -- smart auto-indent
 vim.opt.autoindent = true -- copy indent from current line
+vim.opt.cmdheight = 0 -- height between status and tmux line 0
 
 vim.opt.ignorecase = true -- case insensitive search
 vim.opt.smartcase = true -- case sensitive if uppercase in string
@@ -36,8 +38,6 @@ vim.opt.hlsearch = true -- highlight search matches
 vim.opt.incsearch = true -- show matches as you type
 
 vim.opt.showmatch = true -- hightlights matching brackets
-vim.opt.cmdheight = 1 -- single line command line
-vim.opt.completeopt = "menuone,noinsert,noselect" -- completion options
 vim.opt.showmode = false -- do not show mode, have in status line
 vim.opt.pumheight = 10 -- popup menu height
 vim.opt.pumblend = 10 -- popup menu transparency
